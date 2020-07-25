@@ -41,14 +41,25 @@ console.log("five" * 2)
 // NaN
 console.log(false == 0 )
 // true
-console.log(null == unfined);
+console.log(null == undefined);
 // true
 console.log(null == 0);
 //false
 //逻辑运算符的短路
 console.log(null || "user")
 // user
-colsole.log("Anges" || "user")
+console.log("Anges" || "user")
 // Anges
+//第二章 程序结构
+//绑定
+let ten = 10;
+console.log(ten * ten);
+//100
+let mood = "light";
+console.log(mood);
+// light
+mood = " dark";
+console.log(mood);
+//dark
 
 
