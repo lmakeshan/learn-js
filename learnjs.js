@@ -41,5 +41,14 @@ console.log("five" * 2)
 // NaN
 console.log(false == 0 )
 // true
+console.log(null == unfined);
+// true
+console.log(null == 0);
+//false
+//逻辑运算符的短路
+console.log(null || "user")
+// user
+colsole.log("Anges" || "user")
+// Anges
 
 
