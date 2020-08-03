@@ -61,5 +61,20 @@ console.log(mood);
 mood = " dark";
 console.log(mood);
 //dark
-
-
+let luigisDebt = 140;
+luigisDebt = luigisDebt - 35;
+console.log(luigisDebt);
+// 105
+let one = 1, two = 2;
+console.log(one + two);
+// 3
+// var和const也可以创建绑定
+var name = "Ayda";
+const greeting = "Hello";
+console.log(greeting + name);
+// hello ayda
+// 返回值
+console.log(Math.max(2, 4));
+// 4
+console.log(Math.min(2, 4) + 100);
+// 102
