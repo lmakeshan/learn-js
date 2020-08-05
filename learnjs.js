@@ -108,3 +108,12 @@ for (let counter = 0; counter < 10; counter = counter + 1) {
 }
 console.log(mks);
 // 1024
+// 跳出循环
+for (let current = 20; ; current = current + 1) {
+  if (current % 7 == 0) {
+    console.log(current);
+    break;
+  }
+}
+// 21
+
