@@ -78,3 +78,33 @@ console.log(Math.max(2, 4));
 // 4
 console.log(Math.min(2, 4) + 100);
 // 102
+// while和do循环
+let number = 0;
+while (number <= 12) {
+  console.log(number);
+  number = number + 2;
+}
+// 0
+// 2
+// 诸如此类
+let result = 1;
+let counter = 0;
+while (counter < 10) {
+  result = result * 2;
+  counter = counter + 1;
+}
+console.log(result);
+// 1024
+// for 循环
+for (let number = 0; number <= 12; number = number + 2) {
+  console.log(number);
+}
+// 0
+// 2
+// 诸如此类
+let  mks = 1;
+for (let counter = 0; counter < 10; counter = counter + 1) {
+  mks = mks * 2;
+}
+console.log(mks);
+// 1024
