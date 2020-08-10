@@ -116,4 +116,23 @@ for (let current = 20; ; current = current + 1) {
   }
 }
 // 21
-
+// 第三章  函数
+const square = function(x) {
+  return x * x;
+};
+console.log(square(12));
+// 144
+const makeNoise = function(){
+  console.log("Pling!");
+};
+makeNoise();
+// Pling
+const power = function(base, exponent){
+  let result = 1;
+  for (let count = 0; count < exponent; count++) {
+    result *=base;
+  }
+  return result;
+};
+console.log(power(2, 10));
+// 1024
