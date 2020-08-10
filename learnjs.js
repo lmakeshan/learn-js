@@ -117,6 +117,7 @@ for (let current = 20; ; current = current + 1) {
 }
 // 21
 // 第三章  函数
+// 定义一个函数
 const square = function(x) {
   return x * x;
 };
@@ -136,3 +137,49 @@ const power = function(base, exponent){
 };
 console.log(power(2, 10));
 // 1024
+// 绑定和作用域
+let x = 10;
+if (true) {
+  let y = 20;
+  var z = 30;
+  console.log(x + y + z);
+  // 60
+}
+// y在此处不可见
+console.log(x + z);
+// 40
+const halve = function(n) {
+  return n / 2;
+};
+
+let n = 10;
+console.log(halve(100));
+// 50
+console.log(n);
+// 10
+// 可选参数
+function mkss(x) {return x * x; }
+console.log(mkss(4, true, "hedgehog"));
+// 16
+function minus(a, b){
+  if (b === undefined) return -a;
+  else return a - b;
+}
+
+console.log(minus(10));
+// -10
+console.log(minus(10, 5));
+// 5
+function ww(base, exponent = 2) {
+  let result = 1;
+  for (let count = 0; count < exponent; count++) {
+    result *= base;
+  }
+  return result;
+}
+console.log(ww(4));
+// 16
+console.log(ww(2, 6));
+// 64
+console.log("c", "0", 2);
+// c 0 2
