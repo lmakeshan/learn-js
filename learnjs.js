@@ -183,3 +183,5 @@ console.log(ww(2, 6));
 // 64
 console.log("c", "0", 2);
 // c 0 2
+// 闭包
+
